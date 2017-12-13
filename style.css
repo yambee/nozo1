@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'AgencyFB';
+  src: url('fonts/agencyr.eot');  
+  src: url('fonts/agencyr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('fonts/agencyr.woff') format('woff'), /* Pretty Modern Browsers */
+  url('fonts/agencyr.ttf') format('truetype')  /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'AgencyFBBold';
+  src: url('fonts/agencyb.eot');  
+  src: url('fonts/agencyb.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('fonts/agencyb.woff') format('woff'), /* Pretty Modern Browsers */
+  url('fonts/agencyb.ttf') format('truetype')  /* Safari, Android, iOS */
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'AgencyFB', sans-serif;  
+  /* не везде каскадируется поэтому лучше здесь */
+}
+
+.section {
+  /* width: 1200px; */
+  width: 100%;
+  padding: 0 100px;
+}
+
+/*хедер*/
+#section-01 {  
+  background-color: #303030;
+}
+
+#container-inner-01 {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#logo-img {
+  height: 60px;
+}
+
+#a-sign-in {
+  color: #78e7ff;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+#section-02 {
+  background: url("img/main_bg_01.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#container-inner-02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 800px;
+}
+
+#content-01,
+#content-02,
+#content-02-01,
+#content-02-02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content-02-01,
+#content-02-02 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  text-decoration: none;
+}
+
+#content-02-01:hover {
+  background-color: rgba(255, 90, 0,.2);
+}
+
+#content-02-02:hover {
+  background-color: rgba(0, 91, 127,.2);    
+}
+
+
+#content-01-span,
+#content-02-01-span,
+#content-02-02-span {  
+  font-family: "AgencyFBBold", sans-serif;
+  font-size: 72px;
+  /* font-weight: 400; */
+  text-align: center;
+}
+
+#content-01-span {
+  color: #3c3c3c;
+}
+
+#content-02-01-span {
+  color: #ff5a00;
+}
+
+#content-02-02-span {
+  color: #005b7f;
+}
+
+#content-02-01-img,
+#content-02-02-img {
+  width: 100px;
+}
+
+#section-03 {
+  background-color: #303030;
+}
+
+#container-inner-03 {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#content-03 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: stretch;
+      align-self: stretch; /* себя растянем на всю высоту*/
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; /* себя растянем на всю ширину */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; /* про детей уже */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content-03-01 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+#content-03-02 {}
+
+#content-03-03 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  text-align: right;
+}
+
+#content-03-02-a {
+  color: #ffffff;  
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: underline;
+  position: relative;
+  top:-5px;
+}
+
+#content-03-03-span {
+  color: #ffffff;  
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#content-03-03-span-a {
+  color: #e9be2f;    
+}
+
+
+@media (max-width: 800px) {
+
+  .section {
+    padding: 0 20px;
+  }
+
+  #content-02, 
+  #content-03 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #content-01,
+  #content-02,
+  #content-02-01,
+  #content-02-02,
+  #container-inner-03 {  
+    height: auto;    
+    /* padding: 50px 0; */
+    width: 100%;
+  }
+  
+  #content-01,
+  #content-02-01,
+  #content-02-02 {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  #content-02-01 {
+    background-color: rgba(255, 90, 0, .2);
+  }
+
+  #content-02-02 {
+    background-color: rgba(0, 91, 127, .2);
+  }
+
+  #container-inner-02 {
+    height: auto;    
+  }
+
+  #content-01-span,
+  #content-02-01-span,
+  #content-02-02-span {
+    font-family: "AgencyFBBold", sans-serif;
+    font-size: 40px;    
+    text-align: center;
+  }
+
+  #content-03-02 {
+    height: 80px;
+  }
+  
+  #content-03-03 {
+    height: 50px;
+  }
+
+  
+}
